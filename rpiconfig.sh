@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv-config.sh -O ~/rpisurv/rpisurv-config.sh
+wget --no-cache https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv-config.sh -O ~/rpisurv/rpisurv-config.sh
 chmod +x ~/rpisurv/rpisurv-config.sh
 
 # install is done
