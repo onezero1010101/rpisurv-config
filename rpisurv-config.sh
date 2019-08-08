@@ -24,3 +24,5 @@ sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master
         *) echo "invalid option $REPLY";;
     esac
 done
+sleep 1
+sudo reboot
