@@ -4,7 +4,7 @@
 sudo apt update
 
 # upgrade pi
-sudo apt upgrade -y
+#sudo apt upgrade -y
 
 # install git
 sudo apt install git -y
@@ -25,4 +25,11 @@ cd ~/rpisurv
 echo -ne '\n' | sudo ./install.sh
 
 # run config install per site
-curl https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/install-config.sh | bash
+#curl https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/install-config.sh | bash
+wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv-config.sh -O ~/rpisurv/rpisurv-config.sh
+chmod +x ~/rpisurv/rpisurv-config.sh
+~/rpisurv/rpisurv-config.sh
+echo "\n"
+echo "RpiSurv has been installed and configured.  Please reboot!\n"
+echo "\n"
+
