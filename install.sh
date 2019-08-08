@@ -29,7 +29,3 @@ echo -ne '\n' | sudo ./install.sh
 wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv-config.sh -O ~/rpisurv/rpisurv-config.sh
 chmod +x ~/rpisurv/rpisurv-config.sh
 ~/rpisurv/rpisurv-config.sh
-echo "\n"
-echo "RpiSurv has been installed and configured.  Please reboot!\n"
-echo "\n"
-
