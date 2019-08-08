@@ -9,6 +9,7 @@ do
             sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv.conf.animal -O /etc/rpisurv.conf
             echo "AnimalSecurityPi" | sudo tee /etc/hostname
             echo "127.0.0.1  AnimalSecurityPi" | sudo tee /etc/hosts
+            break
             ;;
         "April")
             sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv.conf.april -O /etc/rpisurv.conf
@@ -20,6 +21,7 @@ do
             sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv.conf.stacie -O /etc/rpisurv.conf
             echo "StacieSecurityPi" | sudo tee /etc/hostname
             echo "127.0.0.1  StacieSecurityPi" | sudo tee /etc/hosts
+            break
             ;;
         "Quit")
             break
