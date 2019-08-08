@@ -1,0 +1,347 @@
+#THIS IS A YAML FILE, INDENTATION IS IMPORTANT. ALSO DO NOT USE TABS FOR INDENTATION, BUT USE SPACES
+#THE FOLLOWING ARE EXAMPLES WITH ALL OPTIONS EXPLAINED, REMOVE OR ADAPT THEM WITH YOUR REAL CONFIG
+
+essentials:
+  #rpisurv will rotate over the following screens in the order they are configured here, if you only define one screen no rotation will happen
+
+  #If you enable this option no auto rotation will happen, but you will still be able to select a screen by pressing and holding a Function Key (F1-F12)
+  #Defaults to False
+  #disable_autorotation: False
+
+  screens:
+      #Start config for example screen one, this is the minimal config. This will show a 2x2 if all streams are connectable,
+      #otherwise rpisurv, by default, rearranges the screen to only show the connectable streams. To disable the latter set disable_probing_for_all_streams=True
+      #Force this screen to be shown by pressing and holding F1 or keypad 0
+
+
+    - camera_streams:
+
+          #Animal Parking
+        - url: "rtsp://10.8.15.12:7447/59fb62b30cf285fc0f109ea3_2"
+          rtsp_over_tcp: true
+
+          #Animal Gate
+        - url: "rtsp://10.8.15.12:7447/59fb62b30cf285fc0f109ea2_2"
+          rtsp_over_tcp: true
+
+          #C3 Front Office
+        - url: "rtsp://10.8.15.12:7447/5ab923dd0cf217436dc29917_2"
+          rtsp_over_tcp: true
+
+          #C3 Warehouse Storage
+        - url: "rtsp://10.8.15.12:7447/5a565faf0cf25387106a42f4_2"
+          rtsp_over_tcp: true
+
+          #C3 Veh1
+        - url: "rtsp://10.8.15.12:7447/5a565faf0cf25387106a42f5_2"
+          rtsp_over_tcp: true
+
+          #Elect Side Door
+        - url: "rtsp://10.8.15.12:7447/56004ec36b565ef75cd35f94_2"
+          rtsp_over_tcp: true
+
+          #Elect Office Front
+        - url: "rtsp://10.8.15.12:7447/56fab8f50cf2b4c1f060225a_2"
+          rtsp_over_tcp: true
+
+          #Elect Office Hallway
+        - url: "rtsp://10.8.15.12:7447/570ba43e0cf2b4c1f0603410_2"
+          rtsp_over_tcp: true
+      nr_of_columns: "3"
+      duration: 0
+#      autostretch: false
+
+    - camera_streams:
+      #Screen 2
+
+          #Mayor Conference
+        - url: "rtsp://10.8.15.12:7447/57695ecf0cf292344e9beb3b_2"
+          rtsp_over_tcp: true
+
+          #Mayor Front
+        - url: "rtsp://10.8.15.12:7447/57694a660cf292344e9be94c_2"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "3"
+      autostretch: False
+      duration: 0
+
+    - camera_streams:
+      #Screen 3
+
+          #Street1
+        - url: "rtsp://admin:bat01man@192.168.11.10:1051/Streaming/channels/102"
+          rtsp_over_tcp: true
+
+          #Street2
+        - url: "rtsp://admin:bat01man@192.168.11.10:1051/Streaming/channels/202"
+          rtsp_over_tcp: true
+
+          #Street3
+        - url: "rtsp://admin:bat01man@192.168.11.10:1051/Streaming/channels/302"
+          rtsp_over_tcp: true
+
+          #Street4
+        - url: "rtsp://admin:bat01man@192.168.11.10:1051/Streaming/channels/402"
+          rtsp_over_tcp: true
+
+          #Street5
+        - url: "rtsp://admin:bat01man@192.168.11.10:1051/Streaming/channels/502"
+          rtsp_over_tcp: true
+
+          #Street6
+        - url: "rtsp://admin:bat01man@192.168.11.10:1051/Streaming/channels/602"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "2"
+      autostretch: False
+      duration: 0
+    - camera_streams:
+      #Screen 4
+
+          #Water1
+        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/101"
+          rtsp_over_tcp: true
+
+          #Water2
+        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/201"
+          rtsp_over_tcp: true
+
+          #Water3
+        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/301"
+          rtsp_over_tcp: true
+
+          #Water4
+        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/401"
+          rtsp_over_tcp: true
+
+          #Water6
+        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/601"
+          rtsp_over_tcp: true
+
+          #Water7
+#        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/701"
+#          rtsp_over_tcp: true
+
+          #Water8
+        - url: "rtsp://admin:water2000@10.8.28.10:1050/Streaming/channels/801"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "3"
+      autostretch: False
+      duration: 0
+      disable_probing_for_all_streams: True
+
+
+
+    - camera_streams:
+      #Screen 5 Park1
+
+          #BW-EastShelter-E
+        - url: "rtsp://10.8.17.2:7447/5988909c0cf2a829583968b7_2"
+          rtsp_over_tcp: true
+
+          #BW-KiwanisShelter-N
+        - url: "rtsp://10.8.17.2:7447/5988909c0cf2a829583968b9_2"
+          rtsp_over_tcp: true
+
+          #BW-ParksStorage-NW
+        - url: "rtsp://10.8.17.2:7447/598b4f450cf2a829583a4402_2"
+          rtsp_over_tcp: true
+
+          #BW-Playground-E
+        - url: "rtsp://10.8.17.2:7447/598dcc8a0cf2a829583b1dc7_2"
+          rtsp_over_tcp: true
+
+          #BW-Shed-IN
+        - url: "rtsp://10.8.17.2:7447/5af4683a0cf26d080c1998f5_2"
+          rtsp_over_tcp: true
+
+          #BW-ShelterParking-S
+        - url: "rtsp://10.8.17.2:7447/598b41ad0cf2a829583a3c95_2"
+          rtsp_over_tcp: true
+
+          #BW-Stage-SW
+        - url: "rtsp://10.8.17.2:7447/5988909c0cf2a829583968b8_2"
+          rtsp_over_tcp: true
+
+          #BW-Swings-W
+        - url: "rtsp://10.8.17.2:7447/598dcc8a0cf2a829583b1dc8_2"
+          rtsp_over_tcp: true
+
+          #BW-Swings2-E
+        - url: "rtsp://10.8.17.2:7447/598b4f450cf2a829583a4403_2"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "3"
+      autostretch: False
+      duration: 5
+
+
+    - camera_streams:
+      #Screen 5 Park2
+
+          #BW-TennisCourt-N
+        - url: "rtsp://10.8.17.2:7447/598b43150cf2a829583a3cc3_2"
+          rtsp_over_tcp: true
+
+          #LG-Concessions-S
+        - url: "rtsp://10.8.17.2:7447/59b69a5a0cf23ab074a7940f_2"
+          rtsp_over_tcp: true
+
+          #LG-ParkingLot-NW
+        - url: "rtsp://10.8.17.2:7447/5b46478c0cf2143cbd4d07f5_2"
+          rtsp_over_tcp: true
+
+          #LG-Playground-E
+        - url: "rtsp://10.8.17.2:7447/59b69a5a0cf23ab074a79411_2"
+          rtsp_over_tcp: true
+
+          #LG-Shed-N
+        - url: "rtsp://10.8.17.2:7447/5af495b20cf26d080c19cf20_2"
+          rtsp_over_tcp: true
+
+          #LG-SplashPark-NE
+        - url: "rtsp://10.8.17.2:7447/59b69a5a0cf23ab074a7940e_2"
+          rtsp_over_tcp: true
+
+          #LG-WarriorResFront-E
+        - url: "rtsp://10.8.17.2:7447/59b69a5a0cf23ab074a79410_2"
+          rtsp_over_tcp: true
+
+          #LG-WarriorResRear-W
+        - url: "rtsp://10.8.17.2:7447/59b69a5a0cf23ab074a7940d_2"
+          rtsp_over_tcp: true
+
+          #LI-BarnParking-SW
+        - url: "rtsp://10.8.17.2:7447/58d2c7110cf23bc7bb997878_2"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "3"
+      autostretch: False
+      duration: 5
+
+    - camera_streams:
+      #Screen 6 Park3
+
+          #LI-BarnParking2-N
+        - url: "rtsp://10.8.17.2:7447/58d2cb490cf23bc7bb997b7e_2"
+          rtsp_over_tcp: true
+
+          #LI-BarnSouth-West
+        - url: "rtsp://10.8.17.2:7447/58d2cb490cf23bc7bb997b80_2"
+          rtsp_over_tcp: true
+
+          #LI-CollierFountain-N
+        - url: "rtsp://10.8.17.2:7447/59c3f38c0cf23ab074a8997d_2"
+          rtsp_over_tcp: true
+
+          #LI-EntranceRd1-S
+        - url: "rtsp://10.8.17.2:7447/582b70abe4b09364b6a2c604_2"
+          rtsp_over_tcp: true
+
+          #LI-EntranceRd2-N
+        - url: "rtsp://10.8.17.2:7447/582b70abe4b09364b6a2c603_2"
+          rtsp_over_tcp: true
+
+          #LI-EntranceRd3-S
+        - url: "rtsp://10.8.17.2:7447/582b6d9ee4b09364b6a2c5f2_2"
+          rtsp_over_tcp: true
+
+          #LI-Gazebo-SW
+        - url: "rtsp://10.8.17.2:7447/59b2e7e60cf293edbaaca047_2"
+          rtsp_over_tcp: true
+
+          #LI-ParksShed-SE
+        - url: "rtsp://10.8.17.2:7447/58d2cb490cf23bc7bb997b7f_2"
+          rtsp_over_tcp: true
+
+          #LI-Playground-W
+        - url: "rtsp://10.8.17.2:7447/582b6d9fe4b09364b6a2c5f6_2"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "3"
+      autostretch: False
+      duration: 5
+
+    - camera_streams:
+      #Screen 7 Park4
+
+          #LI-Restrooms-S
+        - url: "rtsp://10.8.17.2:7447/58e3c2800cf23bc7bba704a2_2"
+          rtsp_over_tcp: true
+
+          #LI-Restrooms2-E
+        - url: "rtsp://10.8.17.2:7447/582b70abe4b09364b6a2c602_2"
+          rtsp_over_tcp: true
+
+          #LI-Shed-IN
+        - url: "rtsp://10.8.17.2:7447/5af452300cf2269cb5d22e26_2"
+          rtsp_over_tcp: true
+
+          #LI-TrainCar-S
+        - url: "rtsp://10.8.17.2:7447/58e3db1c0cf23bc7bba721aa_2"
+          rtsp_over_tcp: true
+
+          #LI-TrainCar2-NE
+        - url: "rtsp://10.8.17.2:7447/582b70abe4b09364b6a2c601_2"
+          rtsp_over_tcp: true
+
+          #LI-TrainCarParking-NE
+        - url: "rtsp://10.8.17.2:7447/582b6d9fe4b09364b6a2c5f3_2"
+          rtsp_over_tcp: true
+
+          #LI-TrainCarParking2-SE
+        - url: "rtsp://10.8.17.2:7447/582b6d9ee4b09364b6a2c5f1_2"
+          rtsp_over_tcp: true
+
+          #LI-WalkingPath-E
+        - url: "rtsp://10.8.17.2:7447/582b6d9fe4b09364b6a2c5f7_2"
+          rtsp_over_tcp: true
+
+          #LI-WalkingPath-N
+        - url: "rtsp://10.8.17.2:7447/582b6d9fe4b09364b6a2c5f8_2"
+          rtsp_over_tcp: true
+
+      nr_of_columns: "3"
+      autostretch: False
+      duration: 5
+
+
+
+#!!!Normal users do not need to edit this section!!!
+advanced:
+  ##Enable this option if you want to have a fixed width of all your camera streams,
+  ##By default rpisurv autocalculates this value, this can cause streams to get "stretched",
+  ##if this value exceeds the available width, rpisurv will fallback to autocalculation
+  #fixed_width: 500
+
+  ##Enable this option if you want to have a fixed height for all your camera streams,
+  ##By default rpisurv autocalculates this value, this can cause streams to get "stretched",
+  ##if this value exceeds the available height, rpisurv will fallback to autocalculation
+  #fixed_height: 500
+
+  #Rpisurv sends usage stats to it's statistics server to give the rpisurv community an idea how widespread this software is being used
+  #No performance impact is measured when using this option, no sensitive data is being sent. All data is anonymised.
+  #By default this is false
+  #update_stats: False
+
+  #By default rpisurv will cache the next screen in the rotation (if more than one screen is configured), to speed up rotation events.
+  #However, this action takes up some resources of the raspberry pi.
+  #If you do not mind a slower rotate event (slower building up of the screen during a rotate event) and you want to free up some resources, then set this to False
+  #This will also speed up first start since no cached screen needs to be started at boot time.
+  #cache_next_screen: True
+
+  #By default rpisurv checks every 19 seconds since start of rpisurv if it needs to redraw the current running screen
+  #interval_check_status: 19
+
+  #By default rpisurv will check memory usage, set to False to skip memory usage check
+  #memory_usage_check: True
+
+#These are fallbacks if autodetection fails;
+#Normally you do not need to configure these
+fallbacks:
+  resolution:
+    width: "1920"
+    height: "1080"
+
