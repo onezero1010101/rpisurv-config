@@ -13,13 +13,13 @@ essentials:
       #otherwise rpisurv, by default, rearranges the screen to only show the connectable streams. To disable the latter set disable_probing_for_all_streams=True
       #Force this screen to be shown by pressing and holding F1 or keypad 0
 
-
+    - camera_streams:
           #Animal Parking
-        - url: "rtsp://10.8.15.12:7447/59fb62b30cf285fc0f109ea3_2"
+        - url: "rtsp://10.8.18.2:7447/59fb62b30cf285fc0f109ea3_2"
           rtsp_over_tcp: true
 
           #Animal Gate
-        - url: "rtsp://10.8.15.12:7447/59fb62b30cf285fc0f109ea2_2"
+        - url: "rtsp://10.8.18.2:7447/59fb62b30cf285fc0f109ea2_2"
           rtsp_over_tcp: true
           
 #      nr_of_columns: "3"
