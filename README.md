@@ -1,10 +1,10 @@
 # rpisurv-config
 RPiSurv Config Files
 
-To install 
+Install 
 
 `curl https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/install.sh | bash`
 
-For April
+Install Config
 
-`curl https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv.conf.april | sudo tee /etc/rpisurv.conf`
+`curl https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/install-config.sh | bash`
