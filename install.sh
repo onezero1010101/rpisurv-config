@@ -24,3 +24,5 @@ sudo sed -i 's/#disable_overscan=1/disable_overscan=1/g' /boot/config.txt
 cd ~/rpisurv
 echo -ne '\n' | sudo ./install.sh
 
+# run config install per site
+curl https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/install-config.sh | bash
