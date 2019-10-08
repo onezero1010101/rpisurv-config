@@ -16,7 +16,7 @@ essentials:
 
     - camera_streams:
           #C3 Front Office
-        - url: "rtsp://10.8.15.12:7447/5ab923dd0cf217436dc29917_2"
+        - url: "rtsp://10.8.18.2:7447/5ab923dd0cf217436dc29917_2"
           rtsp_over_tcp: true
 #      nr_of_columns: "3"
 #      duration: 0
