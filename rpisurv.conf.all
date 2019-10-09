@@ -17,35 +17,35 @@ essentials:
     - camera_streams:
 
           #Animal Parking
-        - url: "rtsp://10.8.15.12:7447/59fb62b30cf285fc0f109ea3_2"
+        - url: "rtsp://10.8.18.2:7447/59fb62b30cf285fc0f109ea3_2"
           rtsp_over_tcp: true
 
           #Animal Gate
-        - url: "rtsp://10.8.15.12:7447/59fb62b30cf285fc0f109ea2_2"
+        - url: "rtsp://10.8.18.2:7447/59fb62b30cf285fc0f109ea2_2"
           rtsp_over_tcp: true
 
           #C3 Front Office
-        - url: "rtsp://10.8.15.12:7447/5ab923dd0cf217436dc29917_2"
+        - url: "rtsp://10.8.18.2:7447/5ab923dd0cf217436dc29917_2"
           rtsp_over_tcp: true
 
           #C3 Warehouse Storage
-        - url: "rtsp://10.8.15.12:7447/5a565faf0cf25387106a42f4_2"
+        - url: "rtsp://10.8.18.2:7447/5a565faf0cf25387106a42f4_2"
           rtsp_over_tcp: true
 
           #C3 Veh1
-        - url: "rtsp://10.8.15.12:7447/5a565faf0cf25387106a42f5_2"
+        - url: "rtsp://10.8.18.2:7447/5a565faf0cf25387106a42f5_2"
           rtsp_over_tcp: true
 
           #Elect Side Door
-        - url: "rtsp://10.8.15.12:7447/56004ec36b565ef75cd35f94_2"
+        - url: "rtsp://10.8.18.2:7447/56004ec36b565ef75cd35f94_2"
           rtsp_over_tcp: true
 
           #Elect Office Front
-        - url: "rtsp://10.8.15.12:7447/56fab8f50cf2b4c1f060225a_2"
+        - url: "rtsp://10.8.18.2:7447/56fab8f50cf2b4c1f060225a_2"
           rtsp_over_tcp: true
 
           #Elect Office Hallway
-        - url: "rtsp://10.8.15.12:7447/570ba43e0cf2b4c1f0603410_2"
+        - url: "rtsp://10.8.18.2:7447/570ba43e0cf2b4c1f0603410_2"
           rtsp_over_tcp: true
       nr_of_columns: "3"
       duration: 0
@@ -55,11 +55,11 @@ essentials:
       #Screen 2
 
           #Mayor Conference
-        - url: "rtsp://10.8.15.12:7447/57695ecf0cf292344e9beb3b_2"
+        - url: "rtsp://10.8.18.2:7447/57695ecf0cf292344e9beb3b_2"
           rtsp_over_tcp: true
 
           #Mayor Front
-        - url: "rtsp://10.8.15.12:7447/57694a660cf292344e9be94c_2"
+        - url: "rtsp://10.8.18.2:7447/57694a660cf292344e9be94c_2"
           rtsp_over_tcp: true
 
       nr_of_columns: "3"
