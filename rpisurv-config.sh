@@ -1,4 +1,9 @@
 #!/bin/bash
+sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/surveillance/images/noconnectable.png -O /usr/local/bin/rpisurv/images/noconnectable.png
+sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/surveillance/images/connecting.png -O /usr/local/bin/rpisurv/images/connecting.png
+sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/surveillance/images/blank.png -O /usr/local/bin/rpisurv/images/blank.png
+sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/surveillance/images/placeholder.png -O /usr/local/bin/rpisurv/images/placeholder.png
+
 
 PS3='Please choose which config you would like to load: '
 options=("Animal" "April" "Stacie" "Quit")
