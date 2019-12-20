@@ -1,0 +1,69 @@
+#THIS IS A YAML FILE, INDENTATION IS IMPORTANT. ALSO DO NOT USE TABS FOR INDENTATION, BUT USE SPACES
+#THE FOLLOWING ARE EXAMPLES WITH ALL OPTIONS EXPLAINED, REMOVE OR ADAPT THEM WITH YOUR REAL CONFIG
+
+essentials:
+  #rpisurv will rotate over the following screens in the order they are configured here, if you only define one screen no rotation will happen
+
+  #If you enable this option no auto rotation will happen, but you will still be able to select a screen by pressing and holding a Function Key (F1-F12)
+  #Defaults to False
+  #disable_autorotation: False
+
+  screens:
+      #Start config for example screen one, this is the minimal config. This will show a 2x2 if all streams are connectable,
+      #otherwise rpisurv, by default, rearranges the screen to only show the connectable streams. To disable the latter set disable_probing_for_all_streams=True
+      #Force this screen to be shown by pressing and holding F1 or keypad 0
+
+    - camera_streams:
+          #SPD Side Door
+        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=1&subtype=0&unicat=true&proto=Onvif"
+          rtsp_over_tcp: true
+
+          #SPD Front Door
+        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=2&subtype=0&unicat=true&proto=Onvif"
+          rtsp_over_tcp: true
+          
+          #SPD Interview Room
+        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=3&subtype=0&unicat=true&proto=Onvif"
+          rtsp_over_tcp: true
+
+#      nr_of_columns: "3"
+#      duration: 0
+#      autostretch: false
+
+
+
+#!!!Normal users do not need to edit this section!!!
+advanced:
+  ##Enable this option if you want to have a fixed width of all your camera streams,
+  ##By default rpisurv autocalculates this value, this can cause streams to get "stretched",
+  ##if this value exceeds the available width, rpisurv will fallback to autocalculation
+  #fixed_width: 500
+
+  ##Enable this option if you want to have a fixed height for all your camera streams,
+  ##By default rpisurv autocalculates this value, this can cause streams to get "stretched",
+  ##if this value exceeds the available height, rpisurv will fallback to autocalculation
+  #fixed_height: 500
+
+  #Rpisurv sends usage stats to it's statistics server to give the rpisurv community an idea how widespread this software is being used
+  #No performance impact is measured when using this option, no sensitive data is being sent. All data is anonymised.
+  #By default this is false
+  #update_stats: False
+
+  #By default rpisurv will cache the next screen in the rotation (if more than one screen is configured), to speed up rotation events.
+  #However, this action takes up some resources of the raspberry pi.
+  #If you do not mind a slower rotate event (slower building up of the screen during a rotate event) and you want to free up some resources, then set this to False
+  #This will also speed up first start since no cached screen needs to be started at boot time.
+  #cache_next_screen: True
+
+  #By default rpisurv checks every 19 seconds since start of rpisurv if it needs to redraw the current running screen
+  #interval_check_status: 19
+
+  #By default rpisurv will check memory usage, set to False to skip memory usage check
+  #memory_usage_check: True
+
+#These are fallbacks if autodetection fails;
+#Normally you do not need to configure these
+fallbacks:
+  resolution:
+    width: "1920"
+    height: "1080"
