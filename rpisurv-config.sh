@@ -28,6 +28,13 @@ do
             echo "127.0.0.1  StacieSecurityPi" | sudo tee /etc/hosts
             break
             ;;
+        "SPD")
+            sudo wget https://raw.githubusercontent.com/onezero1010101/rpisurv-config/master/rpisurv.conf.spd -O /etc/rpisurv.conf
+            echo "SPDSecurityPi" | sudo tee /etc/hostname
+            echo "127.0.0.1  SPDSecurityPi" | sudo tee /etc/hosts
+            break
+            ;;
+
         "Quit")
             break
             ;;
