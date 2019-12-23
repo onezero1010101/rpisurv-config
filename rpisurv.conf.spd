@@ -19,11 +19,11 @@ essentials:
           rtsp_over_tcp: true
 
           #SPD Front Door
-        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=2&subtype=2"
+        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=2&subtype=1"
           rtsp_over_tcp: true
           
           #SPD Interview Room
-        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=3&subtype=3"
+        - url: "rtsp://admin:sw4werty@10.8.24.15:554/cam/realmonitor?channel=3&subtype=1"
           rtsp_over_tcp: true
 
 #      nr_of_columns: "3"
